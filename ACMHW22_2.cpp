@@ -14,8 +14,8 @@ using namespace System::Text;
 using namespace System::Text::RegularExpressions;
 using namespace System::Threading::Tasks;
 
-namespace ACMIWFORHW20{
-	public ref class ACMIWFORHW20{
+namespace ACMHW22_2{
+	public ref class ACMHW22_2{
 		static const char FIRST_CH = 'K';
 
 		const int MAX_BUFFER_SIZE = 8192;
@@ -181,7 +181,7 @@ public: void printMapList__use_cliext(Dictionary<int, String^> ^ mapList);
 				"Worse than the mutines in the bilboes. Rashly- " +
 				"And prais'd be rashness for it-let us know " +
 				"Our indiscretion sometimes serves us well ... "
-				; // — Hamlet, Act 5, Scene 2, 4–8
+				; // â€” Hamlet, Act 5, Scene 2, 4â€“8
 
 			acmiwforhw20->scan(text, list);
 			acmiwforhw20->sort(text, list);
@@ -211,7 +211,7 @@ public: void printMapList__use_cliext(Dictionary<int, String^> ^ mapList);
 #include <cliext/map>
 
 // cliext use example
-void ACMIWFORHW20::ACMIWFORHW20::printMapList__use_cliext(Dictionary<int, String^> ^ mapList) {
+void ACMHW22_2::ACMHW22_2::printMapList__use_cliext(Dictionary<int, String^> ^ mapList) {
 	if (mapList == nullptr) {
 		return;					
 	}
