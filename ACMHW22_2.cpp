@@ -1,6 +1,6 @@
 /********************************************************
 * N.Kozak // Lviv'2020 // ACM // FCL use example by C++ *
-*    file: ACMIWFORHW20.cpp                             *
+*    file: ACMHW22_2.cpp                                *
 *********************************************************/
 // compile with: /clr
 #include "stdafx.h"
@@ -172,7 +172,7 @@ namespace ACMHW22_2{
 public: void printMapList__use_cliext(Dictionary<int, String^> ^ mapList);
 
 		static void Main(array<System::String ^> ^args){
-			ACMIWFORHW20 ^ acmiwforhw20 = gcnew ACMIWFORHW20();
+			ACMHW22_2 ^ acmhw22_2 = gcnew ACMHW22_2();
 
 			List<int> ^ list = gcnew List<int>();
 			String ^ text =
@@ -183,20 +183,20 @@ public: void printMapList__use_cliext(Dictionary<int, String^> ^ mapList);
 				"Our indiscretion sometimes serves us well ... "
 				; // — Hamlet, Act 5, Scene 2, 4–8
 
-			acmiwforhw20->scan(text, list);
-			acmiwforhw20->sort(text, list);
-			Dictionary<int, String^> ^ mapList = acmiwforhw20->getMapList(text, list);
+			acmhw22_2->scan(text, list);
+			acmhw22_2->sort(text, list);
+			Dictionary<int, String^> ^ mapList = acmhw22_2->getMapList(text, list);
 
 			Console::WriteLine("Indexes:");
-			acmiwforhw20->printListIndexes(list);
+			acmhw22_2->printListIndexes(list);
 
 			Console::WriteLine();
 			Console::WriteLine("Values:");
-			acmiwforhw20->print(text, list);
+			acmhw22_2->print(text, list);
 
 			Console::WriteLine();
 			Console::WriteLine("Values(by map):");
-			acmiwforhw20->printMapList(mapList);
+			acmhw22_2->printMapList(mapList);
 
 			Console::WriteLine("Press any key to continue . . . ");
 			Console::ReadKey();
@@ -224,7 +224,7 @@ void ACMHW22_2::ACMHW22_2::printMapList__use_cliext(Dictionary<int, String^> ^ m
 }
 
 int main(array<System::String ^> ^args){
-	ACMIWFORHW20::ACMIWFORHW20::Main(args);
+	ACMHW22_2::ACMHW22_2::Main(args);
 
     return 0;
 }
