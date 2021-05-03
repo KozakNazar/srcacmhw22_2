@@ -3,7 +3,7 @@
 *    file: ACMHW22_2.cpp                                *
 *********************************************************/
 // compile with: /clr
-#include "stdafx.h"
+//#include "stdafx.h"
 
 using namespace System;
 //using namespace System::Collections;
